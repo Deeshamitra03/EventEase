@@ -1,4 +1,4 @@
-/* Base Styles */
+
 :root {
     --primary-color: #6c63ff;
     --secondary-color: #4d44db;
@@ -78,7 +78,7 @@
     font-size: 1.1rem;
   }
   
-  /* Header Styles */
+
   .header {
     background:linear-gradient(135deg, var(--deep-blue) 0%, var(--violet) 100%);
     box-shadow: 0 4px 20px rgba(58, 12, 163, 0.3);
@@ -278,7 +278,7 @@
     color: var(--gray-color);
   }
   
-  /* Venue Detail */
+
   .venue-detail-section {
     padding: 120px 0 80px;
   }
@@ -360,7 +360,7 @@
     margin-right: 10px;
   }
   
-  /* Booking Form */
+
   .booking-section {
     padding: 120px 0 80px;
   }
@@ -443,7 +443,7 @@
     text-align: center;
   }
   
-  /* Success Section */
+
   .success-section {
     padding: 150px 0;
     text-align: center;
@@ -474,7 +474,7 @@
     font-size: 1.1rem;
   }
   
-  /* Dashboard */
+
   .dashboard-section {
     padding: 120px 0 80px;
   }
@@ -604,7 +604,7 @@
     }
   }
   
-  /* Responsive Styles */
+  
   @media (max-width: 768px) {
     .navbar {
       flex-direction: column;
@@ -863,7 +863,7 @@
       order: -1;
     }
   }
-  /* ========== GLOBAL HEADER STYLES ========== */
+
 .header {
   background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
   color: white;
@@ -926,7 +926,7 @@
   transform: translateY(-2px);
 }
 
-/* ========== AUTH PAGES (LOGIN/SIGNUP) ========== */
+
 .auth-container {
   display: flex;
   justify-content: center;
@@ -996,7 +996,7 @@
   font-weight: 500;
 }
 
-/* ========== BOOKING PAGE ========== */
+
 .booking-section {
   padding: 120px 2rem 2rem;
   max-width: 800px;
@@ -1066,7 +1066,7 @@
   background: #e6e9ed;
 }
 
-/* ========== RESPONSIVE ADJUSTMENTS ========== */
+
 @media (max-width: 768px) {
   .form-row, .addons-grid {
     grid-template-columns: 1fr;
@@ -1112,7 +1112,7 @@
   color: white;
 }
 
-/* ========== AUTH CARDS ========== */
+
 .auth-container {
   background: linear-gradient(135deg, #e2f3ff 0%, #f0e4ff 100%);
 }
@@ -1145,7 +1145,7 @@
   box-shadow: 0 0 0 4px rgba(181, 23, 158, 0.15);
 }
 
-/* ========== BOOKING PAGE ========== */
+
 .booking-section {
   padding-top: 140px;
 }
@@ -1179,7 +1179,7 @@
   transform: translateY(-3px);
 }
 
-/* ========== ANIMATIONS ========== */
+
 @keyframes floatIn {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
@@ -1189,7 +1189,7 @@
   animation: floatIn 0.6s ease-out forwards;
 }
 
-/* ========== RESPONSIVE ========== */
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -1205,7 +1205,7 @@
     margin: 0 1rem;
   }
 }
-/* Button styles */
+
 .btn-gradient {
   background: linear-gradient(45deg, #b5179e, #f72585);
   color: white;
@@ -1223,7 +1223,7 @@
   text-align: center;
 }
 
-/* Button hover effects */
+
 .btn-gradient:hover {
   background: linear-gradient(45deg, #f72585, #b5179e);
 }
