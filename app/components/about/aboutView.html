@@ -1,0 +1,41 @@
+<section class="about-section">
+    <div class="container">
+      <div class="about-header">
+        <h1>About EventPro</h1>
+        <p class="subtitle">Making event planning simple and stress-free</p>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Our Story</h2>
+          <p>Founded in 2023, EventEase began with a simple mission: to connect people with perfect venues for their special occasions. What started as a small local service has grown into a nationwide platform serving thousands of clients every year.</p>
+          <p>We believe every event deserves the perfect setting, whether it's an intimate gathering or a grand celebration. Our team works tirelessly to curate the best venues and provide exceptional service to our clients.</p>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30" alt="Event venue">
+        </div>
+      </div>
+      
+      <div class="team-section">
+        <h2>Our Partners</h2>
+        <div class="team-grid">
+          <div class="team-member" ng-repeat="member in team">
+            <div class="member-image">
+              <img ng-src="{{member.image}}" alt="{{member.name}}">
+            </div>
+            <h3>{{member.name}}</h3>
+            <p class="role">{{member.role}}</p>
+            <p class="bio">{{member.bio}}</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stats-section">
+        <div class="stat-item" ng-repeat="stat in stats">
+          <div class="stat-value">{{stat.value}}</div>
+          <div class="stat-label">{{stat.label}}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
