@@ -1,0 +1,26 @@
+<div class="auth-container">
+    <div class="auth-card">
+      <h2>Register</h2>
+      <form ng-submit="register()">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" ng-model="user.name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" ng-model="user.email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" ng-model="user.phone" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" ng-model="user.password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+        <p class="error" ng-if="error">{{error}}</p>
+        <p>Already have an account? <a href="#/login">Login here</a></p>
+      </form>
+    </div>
+  </div>
