@@ -1,0 +1,41 @@
+<section class="dashboard-section">
+    <div class="container">
+      <h1>Your Dashboard</h1>
+      
+      <div class="dashboard-header">
+        <h2>Your Bookings</h2>
+        <a href="#/venues" class="btn btn-primary">Book Another Venue</a>
+      </div>
+      
+      <div class="loading" ng-if="loading">
+        <i class="fas fa-spinner fa-spin"></i> Loading your bookings...
+      </div>
+      
+      <div class="no-bookings" ng-if="!loading && bookings.length === 0">
+        <p>You don't have any bookings yet.</p>
+        <a href="#/venues" class="btn btn-primary">Browse Venues</a>
+      </div>
+      
+      <div class="bookings-list" ng-if="!loading && bookings.length > 0">
+        <div class="booking-card" ng-repeat="booking in bookings">
+          <div class="booking-image" style="background-image: url('{{booking.venue.image}}')"></div>
+          <div class="booking-info">
+            <h3>{{booking.venue.name}}</h3>
+            <p class="booking-date">
+              <i class="fas fa-calendar-alt"></i> {{booking.date | date:'fullDate'}} at {{booking.time}}
+            </p>
+            <div class="booking-details">
+              <p><strong>Guests:</strong> {{booking.guests}}</p>
+              <p><strong>Duration:</strong> {{booking.duration}} hours</p>
+              <p ng-if="booking.addOns.length > 0">
+                <strong>Add-Ons:</strong> {{booking.addOns.join(', ')}}
+              </p>
+              <p ng-if="booking.notes">
+                <strong>Notes:</strong> {{booking.notes}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
