@@ -1,0 +1,264 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "john123",
+      "phone": "555-0101",
+      "bookings": []
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "jane123",
+      "phone": "555-0102",
+      "bookings": []
+    }
+  ],
+  "venues": [
+    {
+      "id": 1,
+      "name": "Grand Ballroom",
+      "description": "Elegant ballroom with capacity for 500 guests",
+      "capacity": 500,
+      "price": 5000,
+      "location": "Downtown",
+      "image": "https://images.unsplash.com/photo-1555244162-803834f70033",
+      "amenities": [
+        "Stage",
+        "Dance Floor",
+        "Lighting"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Garden Pavilion",
+      "description": "Outdoor venue with beautiful garden views",
+      "capacity": 200,
+      "price": 3000,
+      "location": "Riverside",
+      "image": "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf",
+      "amenities": [
+        "Outdoor Space",
+        "Tent",
+        "Parking"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Executive Conference Hall",
+      "description": "Professional space for corporate events",
+      "capacity": 100,
+      "price": 2000,
+      "location": "Business District",
+      "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
+      "amenities": [
+        "AV Equipment",
+        "Whiteboards",
+        "Catering Kitchen"
+      ]
+    },
+    {
+        "id": 4,
+        "name": "TechPark Conference Hall",
+        "description": "Professional conference hall in IT hub",
+        "capacity": 100,
+        "price": 2500,
+        "location": "Electronic City, Bangalore",
+        "image": "https://images.unsplash.com/photo-1588865198054-c83788106132?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29uZmVyZW5jZSUyMGhhbGx8ZW58MHx8MHx8fDA%3D",
+        "amenities": ["Projector", "Wi-Fi", "PA System"]
+    },
+    {
+        "id": 5,
+        "name": "Heritage Banquet",
+        "description": "Traditional styled banquet hall with a royal touch",
+        "capacity": 300,
+        "price": 4000,
+        "location": "Jayanagar, Bangalore",
+        "image": "https://images.unsplash.com/photo-1524824267900-2fa9cbf7a506?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJhbnF1ZXR8ZW58MHx8MHx8fDA%3D",
+        "amenities": ["AC Hall", "Stage", "Chairs & Tables"]
+    },
+      {
+        "id": 6,
+        "name": "Artistry Studio",
+        "description": "Art and exhibition space for galleries and creative workshops",
+        "capacity": 80,
+        "price": 2000,
+        "location": "MG Road, Bangalore",
+        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+        "amenities": ["Gallery Lighting", "Wall Fixtures", "Chairs"]
+      },
+      {
+        "id": 7,
+        "name": "Café Courtyard",
+        "description": "Charming café courtyard ideal for private birthday parties",
+        "capacity": 60,
+        "price": 1500,
+        "location": "Koramangala, Bangalore",
+        "image": "https://images.unsplash.com/photo-1604716823055-cb0ee4360805?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FmZSUyMGNvdXJ0eWFyZCUyMHBhcnR5fGVufDB8fDB8fHww",
+        "amenities": ["Private Space", "Food & Beverages", "Outdoor Seating"]
+      },
+      {
+        "id": 8,
+        "name": "Lakeside Resort",
+        "description": "Luxury resort by the lake, perfect for destination weddings",
+        "capacity": 600,
+        "price": 8000,
+        "location": "Hebbal, Bangalore",
+        "image": "https://images.unsplash.com/photo-1665625467587-33602fe3f007?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGFrZXNpZGUlMjByZXNvcnR8ZW58MHx8MHx8fDA%3D",
+        "amenities": ["Pool", "Lakeside View", "Cottages"]
+      },
+      {
+        "id": 9,
+        "name": "Zen Meditation Center",
+        "description": "Peaceful space for yoga retreats and spiritual gatherings",
+        "capacity": 100,
+        "price": 2200,
+        "location": "Banashankari, Bangalore",
+        "image": "https://images.unsplash.com/photo-1642980522087-b88287220179?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWVkaXRhdGlvbiUyMGNlbnRlcnxlbnwwfHwwfHx8MA%3D%3D",
+        "amenities": ["Mats", "Silence Zone", "Spiritual Decor"]
+      },
+      {
+        "id": 10,
+        "name": "Startup Studio",
+        "description": "Coworking venue ideal for hackathons and workshops",
+        "capacity": 120,
+        "price": 2800,
+        "location": "HSR Layout, Bangalore",
+        "image": "",
+        "amenities": ["Wi-Fi", "Whiteboard", "Café Access"]
+      },
+      {
+        "id": 11,
+        "name": "Amphitheatre Greens",
+        "description": "Open-air stage and seating, ideal for performances",
+        "capacity": 350,
+        "price": 4000,
+        "location": "Lalbagh, Bangalore",
+        "image": "https://images.unsplash.com/photo-1508780709619-79562169bc64",
+        "amenities": ["Stage", "Lighting", "Natural Seating"]
+      },
+      {
+        "id": 12,
+        "name": "Royal Heritage Villa",
+        "description": "Vintage-style villa available for photo/video shoots",
+        "capacity": 30,
+        "price": 1800,
+        "location": "Basavanagudi, Bangalore",
+        "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+        "amenities": ["Furniture", "Props", "Garden"]
+      },
+      {
+        "id": 13,
+        "name": "Infinity Pool Lounge",
+        "description": "Chic rooftop poolside lounge for private gatherings",
+        "capacity": 90,
+        "price": 3500,
+        "location": "Richmond Town, Bangalore",
+        "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095",
+        "amenities": ["Pool", "Bar", "Sun Deck"]
+      },
+      {
+        "id": 14,
+        "name": "Event Plaza",
+        "description": "Multi-purpose event venue with indoor and outdoor options",
+        "capacity": 500,
+        "price": 6000,
+        "location": "Marathahalli, Bangalore",
+        "image": "https://images.unsplash.com/photo-1559223669-d7bb31d71f26?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGV2ZW50JTIwaGFsbHxlbnwwfHwwfHx8MA%3D%3D",
+        "amenities": ["Parking", "AC Hall", "Stage"]
+      },
+      {
+        "id": 15,
+        "name": "Bangalore Book Café",
+        "description": "Cozy book-themed café ideal for meetups and launches",
+        "capacity": 40,
+        "price": 1200,
+        "location": "Sadashivanagar, Bangalore",
+        "image": "https://images.unsplash.com/photo-1516196252840-f9947d2bcb7a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Ym9vayUyMGNhZmV8ZW58MHx8MHx8fDA%3D",
+        "amenities": ["Books", "Coffee", "Wi-Fi"]
+      },
+      {
+        "id": 16,
+        "name": "Studio Vibe",
+        "description": "Music and dance studio for rehearsals and workshops",
+        "capacity": 70,
+        "price": 1900,
+        "location": "BTM Layout, Bangalore",
+        "image": "https://images.unsplash.com/photo-1615213253844-9a9d661d40d0?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFuY2UlMjBzdHVkaW98ZW58MHx8MHx8fDA%3D",
+        "amenities": ["Mirrors", "Sound System", "Wooden Floor"]
+      },
+      {
+        "id": 17,
+        "name": "Urban Escape Resort",
+        "description": "Day outing venue with adventure activities and catering",
+        "capacity": 350,
+        "price": 5000,
+        "location": "Kanakapura Road, Bangalore",
+        "image": "https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVzb3J0fGVufDB8fDB8fHww",
+        "amenities": ["Zip Line", "Buffet", "Rain Dance"]
+      },
+      {
+        "id": 18,
+        "name": "Mini Theater Studio",
+        "description": "Small private theater ideal for screenings and film clubs",
+        "capacity": 50,
+        "price": 2300,
+        "location": "Ulsoor, Bangalore",
+        "image": "https://media.istockphoto.com/id/1016201648/photo/tv-camera-in-a-concert-hall.webp?a=1&b=1&s=612x612&w=0&k=20&c=dPKkvkDXCKvxJNvwh3KKYWtyDI8qpWjBUSsL4PxU94E=",
+        "amenities": ["Projector", "Recliners", "Popcorn"]
+      },
+      {
+        "id": 19,
+        "name": "Clubhouse Central",
+        "description": "Multipurpose clubhouse in a gated community",
+        "capacity": 200,
+        "price": 3000,
+        "location": "Sarjapur Road, Bangalore",
+        "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZXZlbnQlMjB2ZW51ZXxlbnwwfHwwfHx8MA%3D%3D",
+        "amenities": ["Banquet Hall", "Indoor Games", "Kitchen Access"]
+      },
+      {
+        "id": 20,
+        "name": "Pet-Friendly Pavilion",
+        "description": "Unique event venue for pet parties and casual events",
+        "capacity": 80,
+        "price": 2500,
+        "location": "Yelahanka, Bangalore",
+        "image": "https://images.unsplash.com/photo-1542317854-2b4b26e04f34",
+        "amenities": ["Pet Area", "Fencing", "Food Stalls"]
+      },
+      {
+        "id": 21,
+        "name": "Temple View Hall",
+        "description": "Cultural hall facing historic temple, suited for rituals",
+        "capacity": 200,
+        "price": 2500,
+        "location": "Basavanagudi",
+        "image": "https://images.unsplash.com/photo-1720433963013-91fd65fdcb4a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRlbXBsZSUyMHZpZXclMjBoYWxsfGVufDB8fDB8fHww",
+        "amenities": ["Stage", "AC", "Priest Room"]
+      }
+    ],
+    
+  
+  "bookings": [
+    {
+      "userId": 1,
+      "venueId": "1",
+      "addOns": [
+        "catering",
+        "dj"
+      ],
+      "name": "deesha mitra",
+      "email": "deesha.mitra3@gmail.com",
+      "phone": "09845719276",
+      "guests": 10,
+      "date": "2025-05-29T18:30:00.000Z",
+      "time": "1970-01-01T13:50:00.000Z",
+      "duration": 3,
+      "id": 1
+    }
+  ]
+}
