@@ -1,0 +1,68 @@
+<section class="booking-section">
+    <div class="container">
+      <h1>Book {{venue.name}}</h1>
+      
+      <form ng-submit="submitBooking()" class="booking-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" ng-model="booking.name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" ng-model="booking.email" required>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" ng-model="booking.phone" required>
+          </div>
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" ng-model="booking.guests" min="1" max="{{venue.capacity}}" required>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Event Date</label>
+            <input type="date" id="date" ng-model="booking.date" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Event Time</label>
+            <input type="time" id="time" ng-model="booking.time" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="duration">Duration (hours)</label>
+          <input type="number" id="duration" ng-model="booking.duration" min="1" max="24" required>
+        </div>
+        
+        <div class="form-group">
+          <label>Add-On Services</label>
+          <div class="addons-grid">
+            <div class="addon-option" ng-repeat="option in addOnOptions">
+              <input type="checkbox" id="{{option.id}}" ng-model="booking.addOns[option.id]" 
+                     ng-click="toggleAddOn(option.id)">
+              <label for="{{option.id}}">{{option.name}}</label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="notes">Additional Notes</label>
+          <textarea id="notes" ng-model="booking.notes" rows="4"></textarea>
+        </div>
+        
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary" ng-click="resetForm()">Reset</button>
+          <button type="submit" class="btn btn-primary">Confirm Booking</button>
+        </div>
+        
+        <p class="error" ng-if="error">{{error}}</p>
+      </form>
+    </div>
+  </section>
