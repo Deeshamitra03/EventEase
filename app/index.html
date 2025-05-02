@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="eventManagementApp">
+<head>
+  <meta charset="UTF-8">
+  <title>EventEase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <header class="header">
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#!/">Home</a></li>
+      <li><a href="#!/venues">Venues</a></li>
+      <li><a href="#!/about">About</a></li>
+      <li><a href="#!/contact">Contact</a></li>
+      <li ng-if="!isLoggedIn()"><a href="#!/login">Login</a></li>
+      <li ng-if="!isLoggedIn()"><a href="#!/register">Register</a></li>
+      <li ng-if="isLoggedIn()"><a href="#!/dashboard">Dashboard</a></li>
+    </ul>
+  </nav></header>
+
+  <div ng-view></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+  <script src="/app/app.js"></script>
+  <script src="/app/components/home/homeController.js"></script>
+  <script src="/app/components/auth/authController.js"></script>
+  <script src="/app/components/venues/venuesController.js"></script>
+  <script src="/app/components/booking/bookingController.js"></script>
+  <script src="/app/components/dashboard/dashboardController.js"></script>
+  <script src="/app/components/about/aboutController.js"></script>
+  <script src="/app/components/contact/contactController.js"></script>
+  <script src="/app/services/authService.js"></script>
+  <script src="/app/services/venueService.js"></script>
+  <script src="/app/services/bookingService.js"></script>
+
+  <script>
+    console.log("Angular available?", typeof angular !== 'undefined');
+    console.log("Angular app defined?", angular.module('eventManagementApp'));
+  </script>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>EventEase</h3>
+        <p>Making event planning simple and enjoyable.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#!/">Home</a></li>
+          <li><a href="#!/venues">Venues</a></li>
+          <li><a href="#!/about">About Us</a></li>
+          <li><a href="#!/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-envelope"></i> info@eventease.com</p>
+        <p><i class="fas fa-phone"></i> +91 5555002211</p>
+      </div>
+      <div class="footer-section">
+        <h3>Our Office</h3>
+        <p><i class="fas fa-map-marker-alt"></i> First Floor, Atul Towers , Mahatma Gandhi road </p>
+        <p>Bengaluru, Karnataka , 560037</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 EventEase. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
