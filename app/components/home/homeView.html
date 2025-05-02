@@ -1,0 +1,61 @@
+<header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#!/" class="logo">Event<span>Ease</span></a>
+        <ul class="nav-links">
+          <li><a href="#!/">Home</a></li>
+          <li><a href="#!/venues">Venues</a></li>
+          <li><a href="#!/about">About</a></li>
+          <li><a href="#!/contact">Contact</a></li>
+          <li ng-if="!isLoggedIn()"><a href="#!/login">Login</a></li>
+          <li ng-if="!isLoggedIn()"><a href="#!/register" class="btn btn-primary">Sign Up</a></li>
+          <li ng-if="isLoggedIn()"><a href="#!/dashboard">Dashboard</a></li>
+          <li ng-if="isLoggedIn()"><a href="#!/venues" class="btn btn-primary">Book Now</a></li>
+          <li ng-if="isLoggedIn()"><a ng-click="logout()">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Find Your Perfect Event Venue</h1>
+            <p>Discover and book unique venues for your next event</p>
+            <a ng-if="!isLoggedIn()" href="#!/register" class="btn btn-primary btn-large">Get Started</a>
+            <a ng-if="isLoggedIn()" href="#!/venues" class="btn btn-primary btn-large">Browse Venues</a>
+          </div>
+        </div>
+      </section>
+  
+    <section class="featured-venues">
+      <div class="container">
+        <h2>Featured Venues</h2>
+        <div class="venue-grid">
+          <div class="venue-card" ng-repeat="venue in venues">
+            <div class="venue-image" style="background-image: url('{{venue.image}}')"></div>
+            <div class="venue-info">
+              <h3>{{venue.name}}</h3>
+              <p>{{venue.description}}</p>
+              <div class="venue-meta">
+                <span><i class="fas fa-users"></i> {{venue.capacity}} guests</span>
+                <span><i class="fas fa-map-marker-alt"></i> {{venue.location}}</span>
+              </div>
+              <a href="#!/venues/{{venue.id}}" class="btn btn-secondary">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="dashboard-preview" ng-if="isLoggedIn()">
+      <div class="container">
+        <h2>Your Bookings</h2>
+        <div class="booking-summary">
+          <p>You have recent bookings. <a href="#!/dashboard">View Dashboard</a> for details.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
