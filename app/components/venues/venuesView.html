@@ -1,0 +1,30 @@
+<section class="star">
+  <div class="container">
+    <div class="star-content">
+      <h1>EXPLORE THE VENUES</h1>
+      <p>To find your perfect celebration spot!</p>
+   
+    </div>
+  </div>
+</section>
+
+<section class="venues-section">
+    <div class="container">
+      <h1>Our Venues</h1>
+      <div class="venue-grid">
+        <div class="venue-card" ng-repeat="venue in venues">
+          <div class="venue-image" style="background-image: url('{{venue.image}}')"></div>
+          <div class="venue-info">
+            <h3>{{venue.name}}</h3>
+            <p>{{venue.description}}</p>
+            <div class="venue-meta">
+              <span><i class="fas fa-users"></i> {{venue.capacity}} guests</span>
+              <span><i class="fas fa-map-marker-alt"></i> {{venue.location}}</span>
+              <span><i class="fas fa-dollar-sign"></i> {{venue.price | currency}}/day</span>
+            </div>
+            <a href="#/venues/{{venue.id}}" class="btn btn-secondary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
