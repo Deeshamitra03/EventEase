@@ -1,0 +1,32 @@
+<section class="venue-detail-section">
+    <div class="container">
+      <a href="#/venues" class="back-link"><i class="fas fa-arrow-left"></i> Back to Venues</a>
+      
+      <div class="venue-detail">
+        <div class="venue-image" style="background-image: url('{{venue.image}}')"></div>
+        <div class="venue-content">
+          <h1>{{venue.name}}</h1>
+          <p class="location"><i class="fas fa-map-marker-alt"></i> {{venue.location}}</p>
+          <p class="description">{{venue.description}}</p>
+          
+          <div class="venue-details">
+            <div class="detail-item">
+              <i class="fas fa-users"></i>
+              <span>Capacity: {{venue.capacity}} guests</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-dollar-sign"></i>
+              <span>Price: {{venue.price | currency}} per day</span>
+            </div>
+          </div>
+          
+          <h3>Amenities</h3>
+          <ul class="amenities-list">
+            <li ng-repeat="amenity in venue.amenities"><i class="fas fa-check"></i> {{amenity}}</li>
+          </ul>
+          
+          <a href="#!/book/{{venue.id}}" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
